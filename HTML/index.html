@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Nº1</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <!--creo un contenedor para aplicar un grid y poder posicionar cada elemento de la página-->
+    <div class="contenedor">
+        <!--card que contiene logo del supermercado-->
+        <div class="title1">
+            <div class="card mb-3" style="max-width: 540px; background-color: green; margin-left: 20px; margin-top: 20px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="../IMAGENES/carrito.png" class="card-img" alt="carrito de compra">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">SUPERMERCADO BERNAL</h3>
+                      <h5 class="card-text">FRESH MARKET</h5>
+                      <p class="card-text">Envíos a domicilio</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="title2">
+            <p></p>
+        </div>
+        <div class="copete1" style="text-align: center;">
+            <h1> <strong>PRODUCTOS</strong> </h1>
+        </div>
+        <div class="copete2" style="text-align: center;">
+            <h1> <strong>SU COMPRA</strong> </h1>
+        </div>
+        <!--div que contiene tabla de productos a la venta-->
+        <div class="precio">
+            <table class= "propTabla" border="2" style="border-collapse: collapse" width="90%" height="90%">
+                <thead>
+                    <tr>
+                        <th style="text-align: center;"WIDTH="100"HEIGHT="50"><strong>Nombre</strong></th>
+                        <th style="text-align: center;"WIDTH="30"HEIGHT="50"><strong>Precio Unitario</strong></th>
+                        <th style="text-align: center;"WIDTH="50"HEIGHT="50"><strong>Cantidad</strong></th>
+                        <th style="text-align: center;"WIDTH="50"HEIGHT="50"><strong>Confirmar Producto</strong></th>
+                    </tr>
+                </thead>
+                <tbody style="text-align: center;">
+                </tbody>
+            </table>
+        </div>
+        <!--div que contiene tabla de productos en carrito-->
+        <div class="compra">
+            <table class= "propTabla" border="2" style="border-collapse: collapse">
+                <thead style="text-align: center;" >
+                    <tr>
+                        <th style="height: 20px;"><strong>Nombre</strong></th>
+                        <th style="height: 20px;"><strong>Cantidad</strong></th>
+                        <th style="height: 20px;"><strong>Precio Unitario</strong></th>
+                        <th style="height: 20px;"><strong>Precio Total</strong></th>
+                        <th style="height: 20px;"><strong>Eliminar Producto</strong></th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoCompra" style="text-align: center;">
+                    
+                </tbody>
+            </table>
+        </div>
+        <!--div que contiene botn de finalizar compra-->
+        <div class="total1">
+            <button type="button" class="btn btn-success" onclick="finCompra()" style="color: black;"> <h3>FIN DE COMPRA</h3> </button>
+        </div>
+        <!--div que contiene un h2 mostrando precio total-->
+        <div class="total2">
+        <h2></h2>
+        </div>
+
+
+    </div>
+
+    <script src="../JS/script.js"></script>;
+</body>
+
+
+</html>

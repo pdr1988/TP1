@@ -1,0 +1,94 @@
+.body{
+    margin: 0; 
+    border: 0;
+    padding: 0;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 4fr 0.6fr;
+    grid-template-areas: 
+    "title1 title2"
+    "copete1 copete2"
+    "precio compra"
+    "total1 total2";
+}
+
+.title1
+{
+    grid-area: title1;
+    display: grid;
+    background-color: green;
+    
+}
+.title2
+{
+    grid-area: title2;
+    display: grid;
+    background-color: green;
+    
+}
+.copete1
+{
+    grid-area: copete1;
+    display: grid;
+    background-color: grey;
+    margin: 0px; 
+    border: 0px;
+    padding: 0px; 
+}
+.copete2
+{
+    grid-area: copete2;
+    display: grid;
+    background-color:grey;
+    margin: 0px; 
+    border: 0px;
+    padding: 0px; 
+}
+.precio
+{
+    grid-area: precio;
+    display: grid;    
+    margin-top: 10px;
+    background-color: rgb(231, 231, 129);
+    font-weight: bold;
+ 
+}
+.compra
+{
+    grid-area: compra;
+    display: grid;
+    background-color:rgb(231, 231, 129);
+    margin-top: 10px;
+   
+}
+.total1
+{
+    grid-area: total1;
+    display: grid;
+    background-color:grey;
+    margin: 0px; 
+    border: 0px;
+    padding: 0px;
+    color: black;
+}
+.total2
+{
+    grid-area: total2;
+    display: grid;
+    background-color:grey;
+    margin: 0px; 
+    border: 0px;
+    padding: 0px;
+    color: black;
+    text-align: center;
+    align-items: center;
+}
+.propTabla
+{
+margin-left: 30px;
+margin-top: 30px;
+font-weight: bolder;
+}
